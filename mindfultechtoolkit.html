@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mindful Tech Toolkit</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fff7f3;
+      --text: #2b2b2b;
+      --accent1: #ff8ba7;
+      --accent2: #8bcdff;
+      --accent3: #ffd86b;
+      --card: #fff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, var(--accent2) 0%, var(--bg) 50%, var(--accent1) 100%);
+      color: var(--text);
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--text);
+    }
+    header p {
+      color: #555;
+    }
+
+    .toolkit {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+      filter: blur(30px);
+      z-index: 0;
+    }
+
+    .blob1 { background: var(--accent1); top: -40px; left: -40px; width: 150px; height: 150px; }
+    .blob2 { background: var(--accent2); bottom: -40px; right: -40px; width: 150px; height: 150px; }
+
+    .content { position: relative; z-index: 1; }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #444;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 The Mindful Tech Toolkit</h1>
+    <p>Vibrant tools and habits for intentional, focused, and joyful tech use</p>
+  </header>
+
+  <section class="toolkit">
+    <div class="card">
+      <div class="blob blob1"></div><div class="blob blob2"></div>
+      <div class="content">
+        <h2>21-Day Challenge</h2>
+        <p>Challenge yourself to 21 days of mindful tech use. Set daily goals like “no phone at dinner” or “social media only after 7 PM.” Track progress and build habits that last.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="blob blob1"></div><div class="blob blob2"></div>
+      <div class="content">
+        <h2>Alarmy</h2>
+        <p>The alarm app that won’t let you snooze! Solve a math problem or snap a photo to turn it off—making sure you actually wake up (and don’t scroll back to sleep).</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="blob blob1"></div><div class="blob blob2"></div>
+      <div class="content">
+        <h2>Headspace</h2>
+        <p>Your pocket meditation coach. Just 10 minutes a day can turn your digital chaos into calm focus. Breathe, relax, and recenter with guided sessions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="blob blob1"></div><div class="blob blob2"></div>
+      <div class="content">
+        <h2>OneSec</h2>
+        <p>Before you open Instagram, it makes you pause: “Do you really want to do this?” It’s your digital guardian angel that saves you from doomscrolling.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="blob blob1"></div><div class="blob blob2"></div>
+      <div class="content">
+        <h2>Forest</h2>
+        <p>Grow trees by focusing. Stay productive, and your forest thrives. Get distracted, and your trees wither away. It’s cute, green, and surprisingly motivating.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="blob blob1"></div><div class="blob blob2"></div>
+      <div class="content">
+        <h2>Screen Time Display & Grayscale Mode</h2>
+        <p>Put your screen time right on your home page for accountability. Turn your display to grayscale — when your phone looks boring, your brain stops craving it.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>🤍🤍🤍</p>
+  </footer>
+</body>
+</html>
